@@ -10,7 +10,7 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'devops_aks_authentication'
+    azureSubscription: 'dotnetserviceconnection'
     appType: 'webAppLinux'
     appName: 'chaithrawebapp'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
